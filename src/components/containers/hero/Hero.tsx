@@ -6,8 +6,6 @@ import {
   faGithub,
   faLinkedin
 } from '@fortawesome/free-brands-svg-icons'
-
-import { ReactComponent as SvgFacebook } from "../../../assets/images/facebook.svg"
 function Hero() {
   return (
     <div className="hero-container">
@@ -15,18 +13,26 @@ function Hero() {
         <img className="hero-img" src={require("../../../assets/images/hero-image.png")} alt="hero-img" />
         <div className="social-wrapper">
           <ul className="social-list">
-            <li>
-              <FontAwesomeIcon icon={faFacebook} />
-            </li>
-            <li>
-              <FontAwesomeIcon icon={faInstagram} />
-            </li>
-            <li>
-              <FontAwesomeIcon icon={faGithub} />
-            </li>
-            <li>
-              <FontAwesomeIcon icon={faLinkedin} />
-            </li>
+            <a href="https://www.facebook.com/DMs.Cloud/">
+              <li>
+                <FontAwesomeIcon icon={faFacebook} />
+              </li>
+            </a>
+            <a href="https://www.instagram.com/tienphat07/">
+              <li>
+                <FontAwesomeIcon icon={faInstagram} />
+              </li>
+            </a>
+            <a href="https://github.com/Dust07">
+              <li>
+                <FontAwesomeIcon icon={faGithub} />
+              </li>
+            </a>
+            <a href="https://www.linkedin.com/in/letrantienphat/">
+              <li>
+                <FontAwesomeIcon icon={faLinkedin} />
+              </li>
+            </a>
           </ul>
         </div>
         <div className="bio-wrapper">

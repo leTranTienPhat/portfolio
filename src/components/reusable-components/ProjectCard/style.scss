@@ -1,0 +1,42 @@
+@import "../../../scss/variables.scss";
+
+.project-card-container {
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 4px 16px, rgba(255, 255, 255, 0.1) 0px 8px 24px,
+    rgba(255, 255, 255, 0.1) 0px 16px 56px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: $border-radius;
+  color: $main-white;
+  .project-card-wrapper {
+    border-radius: $border-radius;
+    .project-card-img {
+      color: $main-yellow;
+      text-align: center;
+      > img {
+        max-width: 90%;
+        max-height: 90%;
+      }
+      > h3 {
+        margin: 1rem 0;
+        font-size: 2rem;
+      }
+    }
+    .project-card-desc {
+      text-align: center;
+      .project-link-btn {
+        margin: 1rem 1rem;
+        background-color: $main-yellow;
+        font-weight: 700;
+        color: black;
+        width: 100px;
+        height: 40px;
+        border-radius: $border-radius;
+      }
+    }
+  }
+}
+
+.github {
+  background-color: $main-white !important;
+}
