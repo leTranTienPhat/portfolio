@@ -1,6 +1,12 @@
 import "./style.scss"
 
-function ProjectCard({ img, title }: { img: string, title: string }) {
+function ProjectCard({
+  img,
+  title,
+  desc,
+  githubLink,
+  websiteLink
+}: { img: string, title: string, desc: string, githubLink: string, websiteLink: string }) {
   return (
     <div className="project-card-container">
       <div className="project-card-wrapper">
@@ -10,9 +16,9 @@ function ProjectCard({ img, title }: { img: string, title: string }) {
         </div>
 
         <div className="project-card-desc">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta iusto facilis veritatis, nisi totam sed ex, nostrum possimus provident in dolor ab tenetur ipsum fugiat. Dolore iure autem mollitia voluptatem!</p>
-          <button className="project-link-btn github">Github</button>
-          <button className="project-link-btn">View Website</button>
+          <p>{desc}</p>
+          <button className="project-link-btn github" onClick={() => window.open(githubLink)}>Github</button>
+          <button className="project-link-btn" onClick={() => window.open(websiteLink)}>View Website</button>
         </div>
       </div>
     </div>
