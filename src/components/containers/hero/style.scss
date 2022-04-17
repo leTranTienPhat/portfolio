@@ -1,3 +1,5 @@
+@import "../../../scss/variables.scss";
+
 .hero {
   height: 100vh;
   position: relative;
@@ -14,7 +16,7 @@
 .social-wrapper {
   position: absolute;
   bottom: 1rem;
-  right: 1rem;
+  right: 2%;
   .social-list {
     list-style: none;
     display: flex;
@@ -23,12 +25,38 @@
       width: 3rem;
       height: 3rem;
     }
+    .facebook:hover {
+      color: $facebook;
+      transition: 0.5s;
+    }
+    .instagram:hover {
+      color: $instagram;
+      transition: 0.5s;
+    }
+
+    .linkedin:hover {
+      color: $linkedin;
+      transition: 0.5s;
+    }
   }
 }
 
 .bio-wrapper {
   position: absolute;
-  bottom: 25%;
+  bottom: 20%;
   width: 60%;
   font-size: 1.5rem;
+}
+
+.bio-important-info {
+  padding-top: 3rem;
+}
+
+.get-resume-btn {
+  height: 50px;
+  width: 250px;
+  font-size: 30px;
+  background-color: $main-yellow;
+  border-radius: $border-radius;
+  border: none;
 }

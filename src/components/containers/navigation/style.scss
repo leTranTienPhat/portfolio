@@ -1,0 +1,44 @@
+@import "../../../scss/variables.scss";
+
+.navigator-toggle-btn {
+  position: fixed;
+  margin-top: 2rem;
+  right: 2%;
+  z-index: 3;
+}
+.navigator-container {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100vh;
+  z-index: 2;
+  transform: translateX(100%);
+  transition: 0.5s;
+}
+.showNavigator {
+  transform: translateX(0);
+}
+.navigator-icon {
+  font-size: 50px;
+  transform: rotate(0deg);
+  transition: 0.5s;
+}
+.navigator-list {
+  padding-top: 100px;
+  > li {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 2rem;
+  }
+
+  a:hover {
+    color: $main-yellow !important;
+  }
+}
+
+.active {
+  transform: rotate(90deg);
+  transition: 0.5s;
+}

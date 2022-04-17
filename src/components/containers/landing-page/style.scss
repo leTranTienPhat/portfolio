@@ -14,3 +14,31 @@
     gap: 1rem;
   }
 }
+
+.section {
+  margin: 2rem 0;
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+.split-section::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 40%;
+  height: 5px;
+  background-color: $main-yellow;
+}
+
+.split-section::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 40%;
+  height: 5px;
+  background-color: $main-yellow;
+}

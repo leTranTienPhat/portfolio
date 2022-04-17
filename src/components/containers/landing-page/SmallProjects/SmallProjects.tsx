@@ -12,7 +12,7 @@ function SmallProjects() {
         <ProjectCard
           title="Discord's Landing page"
           img={discordClone}
-          desc="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+          desc="Built from scratch using React. A small project i did as part of the Codedamn challenges."
           githubLink="https://github.com/Dust07/DiscordClone"
           websiteLink="https://github.com/Dust07/DiscordClone"
         />
@@ -21,7 +21,7 @@ function SmallProjects() {
         <ProjectCard
           title="Quiz App"
           img={quizApp}
-          desc="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+          desc="An React mini quiz interactive game with timer, able to save highscores on local storage. "
           githubLink="https://github.com/Dust07/QuizChallenge"
           websiteLink="https://quiz-challenge-botqg7ggb-dust07.vercel.app/"
         />
@@ -30,7 +30,7 @@ function SmallProjects() {
         <ProjectCard
           title="Shopping cart"
           img={cart}
-          desc="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+          desc="Shopping cart functions built when i first started learning React and Hooks."
           githubLink="https://github.com/Dust07/cart-tutorial"
           websiteLink="https://cart-tutorial.vercel.app/"
         />

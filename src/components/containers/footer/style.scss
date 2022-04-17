@@ -1,0 +1,59 @@
+@import "../../../scss/variables.scss";
+
+.footer-container {
+  background-color: $main-theme;
+  display: flex;
+  justify-content: center;
+  border-top: $border;
+  width: 100%;
+  height: 20vh;
+  .footer-wrapper {
+    display: flex;
+    width: 90%;
+    .footer-title-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 35%;
+    }
+    .footer-contact-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 35%;
+      line-height: 2rem;
+    }
+    .footer-social-wrapper {
+      width: 30%;
+      display: flex;
+      align-items: center;
+      .social-list {
+        list-style: none;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        svg {
+          width: 3rem;
+          height: 3rem;
+        }
+      }
+    }
+  }
+}
+.footer-highlight {
+  font-size: 2rem;
+  color: $main-yellow;
+}
+.facebook:hover {
+  color: $facebook;
+  transition: 0.5s;
+}
+.instagram:hover {
+  color: $instagram;
+  transition: 0.5s;
+}
+
+.linkedin:hover {
+  color: $linkedin;
+  transition: 0.5s;
+}

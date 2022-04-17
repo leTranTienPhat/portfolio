@@ -6,6 +6,7 @@ import {
   faGithub,
   faLinkedin
 } from '@fortawesome/free-brands-svg-icons'
+
 function Hero() {
   return (
     <div className="hero-container">
@@ -15,12 +16,17 @@ function Hero() {
           <ul className="social-list">
             <a href="https://www.facebook.com/DMs.Cloud/">
               <li>
-                <FontAwesomeIcon icon={faFacebook} />
+                <button className="get-resume-btn">Get CV</button>
+              </li>
+            </a>
+            <a href="https://www.facebook.com/DMs.Cloud/">
+              <li>
+                <FontAwesomeIcon icon={faFacebook} className="facebook" />
               </li>
             </a>
             <a href="https://www.instagram.com/tienphat07/">
               <li>
-                <FontAwesomeIcon icon={faInstagram} />
+                <FontAwesomeIcon icon={faInstagram} className="instagram" />
               </li>
             </a>
             <a href="https://github.com/Dust07">
@@ -30,13 +36,16 @@ function Hero() {
             </a>
             <a href="https://www.linkedin.com/in/letrantienphat/">
               <li>
-                <FontAwesomeIcon icon={faLinkedin} />
+                <FontAwesomeIcon icon={faLinkedin} className="linkedin" />
               </li>
             </a>
           </ul>
         </div>
         <div className="bio-wrapper">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam blanditiis nihil iusto, mollitia deserunt eius odio dolor itaque sunt, quas, vero nesciunt. Ea perferendis ex, sed iure nulla dignissimos veniam?</p>
+          <p>I have studied programing languages for 3 years in college before dropping out due to family issues. But now i want to get back to writing codes, because this is what i do best.
+          </p>
+          <p className="bio-important-info">I have been self-studing Javascript, React for 4 months, did some small projects here and there to put my knowledge into practice.
+          </p>
         </div>
       </div>
     </div>

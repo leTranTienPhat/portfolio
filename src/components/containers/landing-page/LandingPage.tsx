@@ -8,14 +8,15 @@ import "./style.scss"
 function LandingPage() {
   return (
     <div className='content-container'>
-      <h2>My Projects</h2>
+      <div className="section">
+        <h2 className="split-section" id="projects">Projects</h2>
+      </div>
       <div className="project-wrapper">
         <div className="project-list">
           <LargeProjects />
           <SmallProjects />
         </div>
       </div>
-
       <About />
     </div>
   )

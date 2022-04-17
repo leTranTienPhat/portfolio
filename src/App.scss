@@ -1,12 +1,16 @@
 @import "./scss/variables.scss";
 
 .App {
+  position: relative;
   width: 100%;
   color: white;
   background-image: url("./assets/images/background.jpg");
   background-size: cover repeat;
 }
 
+a {
+  text-decoration: none;
+}
 h2 {
   margin: 2rem 0;
   font-size: 40px;

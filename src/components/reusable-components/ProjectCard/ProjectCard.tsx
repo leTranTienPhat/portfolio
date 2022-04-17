@@ -16,9 +16,11 @@ function ProjectCard({
         </div>
 
         <div className="project-card-desc">
-          <p>{desc}</p>
-          <button className="project-link-btn github" onClick={() => window.open(githubLink)}>Github</button>
-          <button className="project-link-btn" onClick={() => window.open(websiteLink)}>View Website</button>
+          <p className="project-card-desc-text">{desc}</p>
+          <div>
+            <button className="project-link-btn github" onClick={() => window.open(githubLink)}>Github</button>
+            <button className="project-link-btn" onClick={() => window.open(websiteLink)}>View Website</button>
+          </div>
         </div>
       </div>
     </div>

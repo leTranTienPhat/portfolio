@@ -1,0 +1,16 @@
+@import "../../../scss/variables.scss";
+
+.header-container {
+  position: absolute;
+  margin-top: 0.5rem;
+  left: 5%;
+  gap: 2rem;
+  .logo {
+    max-width: 20%;
+  }
+  .header-text {
+    font-family: "COMIC SANS MS", "Arial Narrow", Arial, sans-serif;
+    font-size: 40px;
+    color: $main-yellow;
+  }
+}

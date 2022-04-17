@@ -23,7 +23,13 @@
       }
     }
     .project-card-desc {
-      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .project-card-desc-text {
+        text-align: center;
+        width: 80%;
+      }
       .project-link-btn {
         margin: 1rem 1rem;
         background-color: $main-yellow;
