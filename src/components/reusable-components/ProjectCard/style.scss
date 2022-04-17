@@ -47,3 +47,10 @@
 .github {
   background-color: $main-white !important;
 }
+
+.project-btn-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,26 @@
+@import "../../../scss/variables.scss";
+
+@media screen and (max-width: $pc) {
+  .split-section::before {
+    width: 30%;
+  }
+
+  .split-section::after {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .section {
+    margin: 0 !important;
+  }
+  .split-section::before {
+    width: 0;
+  }
+  .split-section::after {
+    width: 0;
+  }
+  .quotes {
+    display: none;
+  }
+}

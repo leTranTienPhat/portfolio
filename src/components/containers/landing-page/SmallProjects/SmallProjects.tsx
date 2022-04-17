@@ -1,5 +1,5 @@
 import "./style.scss"
-
+import "./responsive.scss"
 import ProjectCard from '../../../reusable-components/ProjectCard/ProjectCard'
 import cart from "../../../../assets/images/Cart.png"
 import quizApp from "../../../../assets/images/Quiz.png"

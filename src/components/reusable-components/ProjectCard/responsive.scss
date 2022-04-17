@@ -1,0 +1,10 @@
+@import "../../../scss/variables.scss";
+
+@media screen and (max-width: $ipadS) {
+  .project-card-desc-text {
+    font-size: 12px !important;
+  }
+  h3 {
+    font-size: 16px !important;
+  }
+}

@@ -1,4 +1,5 @@
 import "./style.scss"
+import "./responsive.scss"
 import reactIcon from "../../../../assets/images/React.png"
 import jsIcon from "../../../../assets/images/javascript.png"
 import htmlIcon from "../../../../assets/images/html5.png"
@@ -20,7 +21,7 @@ function About() {
         <h2 className="split-section">What can i do?</h2>
       </div>
       <div className="about-desc">
-        <p>"Knowledge is of no value unless you put it into practice"</p>
+        <p className="quotes">"Knowledge is of no value unless you put it into practice"</p>
       </div>
 
       <div className="skills-gridview">
@@ -35,20 +36,15 @@ function About() {
           </ul>
         </div>
         <div className="skills-wrapper">
-          <div className="library">
-            <ul className="skills-list">
-              <li> <img src={reduxIcon} alt="reduxIcon" className="small-icon" /> </li>
-              <li> <img src={sassIcon} alt="sassIcon" className="small-icon" /> </li>
-              <li> <img src={githubIcon} alt="githubIcon" className="small-icon" /> </li>
-            </ul>
-          </div>
-          <div className="more-skills">
-            <ul className="skills-list">
-              <li> <img src={ptsIcon} alt="psIcon" className="small-icon" /> </li>
-              <li> <img src={aiIcon} alt="aiIcon" className="small-icon" />  </li>
-
-            </ul>
-          </div>
+          <ul className="skills-list">
+            <li> <img src={reduxIcon} alt="reduxIcon" className="small-icon" /> </li>
+            <li> <img src={sassIcon} alt="sassIcon" className="small-icon" /> </li>
+            <li> <img src={githubIcon} alt="githubIcon" className="small-icon" /> </li>
+          </ul>
+          <ul className="skills-list">
+            <li> <img src={ptsIcon} alt="psIcon" className="small-icon" /> </li>
+            <li> <img src={aiIcon} alt="aiIcon" className="small-icon" />  </li>
+          </ul>
         </div>
       </div>
 

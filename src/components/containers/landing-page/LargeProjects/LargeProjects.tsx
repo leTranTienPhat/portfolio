@@ -1,4 +1,5 @@
 import "./style.scss"
+import "./responsive.scss"
 
 import ProjectCard from '../../../reusable-components/ProjectCard/ProjectCard'
 import ColoShop from '../../../../assets/images/ColoShop.png'

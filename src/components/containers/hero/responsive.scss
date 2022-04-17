@@ -1,0 +1,22 @@
+@import "../../../scss/variables.scss";
+
+@media screen and (max-width: $ipadL) {
+  .extra-info {
+    display: none;
+  }
+}
+
+@media screen and (max-width: $ipadS) {
+  .get-resume-btn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .bio-important-info {
+    font-size: 20px;
+  }
+  .bio-wrapper {
+    height: 50%;
+  }
+}

@@ -1,9 +1,8 @@
+import "./style.scss"
+import "./responsive.scss"
 import About from "./About/About"
 import LargeProjects from "./LargeProjects/LargeProjects"
 import SmallProjects from "./SmallProjects/SmallProjects"
-
-
-import "./style.scss"
 
 function LandingPage() {
   return (

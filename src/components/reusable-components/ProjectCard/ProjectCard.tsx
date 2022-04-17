@@ -1,5 +1,5 @@
 import "./style.scss"
-
+import "./responsive.scss"
 function ProjectCard({
   img,
   title,
@@ -17,7 +17,7 @@ function ProjectCard({
 
         <div className="project-card-desc">
           <p className="project-card-desc-text">{desc}</p>
-          <div>
+          <div className="project-btn-wrapper">
             <button className="project-link-btn github" onClick={() => window.open(githubLink)}>Github</button>
             <button className="project-link-btn" onClick={() => window.open(websiteLink)}>View Website</button>
           </div>

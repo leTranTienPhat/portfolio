@@ -1,0 +1,32 @@
+@import "../../../scss/variables.scss";
+
+@media screen and (max-width: $ipadS) {
+  .footer-social-wrapper {
+    .social-list {
+      svg {
+        max-width: 2rem;
+        max-height: 2rem;
+      }
+    }
+  }
+  .footer-highlight {
+    font-size: 25px !important;
+  }
+  .footer-contact-wrapper {
+    font-size: 10px;
+  }
+  .social-list {
+    flex-wrap: wrap;
+  }
+
+  .footer-title-wrapper {
+    width: 35% !important;
+  }
+  .footer-contact-wrapper {
+    width: 50% !important;
+    line-height: 2rem;
+  }
+  .footer-social-wrapper {
+    width: 15% !important;
+  }
+}

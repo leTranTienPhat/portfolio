@@ -1,4 +1,5 @@
 import "./style.scss"
+import "./responsive.scss"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faFacebook,
@@ -42,7 +43,7 @@ function Hero() {
           </ul>
         </div>
         <div className="bio-wrapper">
-          <p>I have studied programing languages for 3 years in college before dropping out due to family issues. But now i want to get back to writing codes, because this is what i do best.
+          <p className="extra-info">I have studied programing languages for 3 years in college before dropping out due to family issues. But now i want to get back to writing codes, because this is what i do best.
           </p>
           <p className="bio-important-info">I have been self-studing Javascript, React for 4 months, did some small projects here and there to put my knowledge into practice.
           </p>

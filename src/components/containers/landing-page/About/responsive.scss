@@ -1,0 +1,51 @@
+@import "../../../../scss/variables.scss";
+
+@media screen and (max-width: $ipadL) {
+  .skills-gridview {
+    grid-template-columns: 1fr !important;
+  }
+  .skills-wrapper {
+    > ul {
+      margin: 1rem 0;
+    }
+  }
+
+  .section {
+    margin: 4rem 0 !important;
+  }
+}
+
+@media screen and (max-width: $ipadS) {
+  .skills-list {
+    img {
+      max-width: 80px !important;
+    }
+  }
+  .small-icon {
+    max-width: 60px !important;
+  }
+  .languages-wrapper {
+    img {
+      max-width: 100px;
+    }
+  }
+  .languages-card {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .skills-list {
+    img {
+      max-width: 50px !important;
+    }
+  }
+  .small-icon {
+    max-width: 40px !important;
+  }
+  .languages-wrapper {
+    img {
+      max-width: 50px;
+    }
+  }
+}
