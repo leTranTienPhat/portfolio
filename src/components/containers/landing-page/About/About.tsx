@@ -21,7 +21,7 @@ function About() {
         <h2 className="split-section">What can i do?</h2>
       </div>
       <div className="about-desc">
-        <p className="quotes">"Knowledge is of no value unless you put it into practice"</p>
+        <p className="quotes">"Knowledge rests not upon truth alone, but upon error also"</p>
       </div>
 
       <div className="skills-gridview">
