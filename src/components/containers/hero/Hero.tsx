@@ -9,17 +9,16 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 
 function Hero() {
+  const myCVLink = "https://drive.google.com/file/d/1k-L_f9IbuX16H-WxRMI47DZSqhaLYqoe/view?usp=sharing/"
   return (
     <div className="hero-container">
       <div className="hero">
         <img className="hero-img" src={require("../../../assets/images/hero-image.png")} alt="hero-img" />
         <div className="social-wrapper">
           <ul className="social-list">
-            <a href="https://www.facebook.com/DMs.Cloud/">
-              <li>
-                <button className="get-resume-btn">Get CV</button>
-              </li>
-            </a>
+            <li>
+              <button className="get-resume-btn" onClick={() => window.open(myCVLink)} >Get CV</button>
+            </li>
             <a href="https://www.facebook.com/DMs.Cloud/">
               <li>
                 <FontAwesomeIcon icon={faFacebook} className="facebook" />

@@ -1,9 +1,11 @@
 import "./style.scss"
+import "./responsive.scss"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faBars
 } from '@fortawesome/free-solid-svg-icons'
 import { useState } from "react"
+
 function Navigation() {
   const [toggleNavigator, setToggleNavigator] = useState<boolean>(false);
   return (
