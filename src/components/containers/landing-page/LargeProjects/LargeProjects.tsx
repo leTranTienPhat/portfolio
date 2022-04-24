@@ -23,7 +23,7 @@ function LargeProjects() {
           img={LinkNeverPhai}
           desc="A clone version of LinkNerverDie's original website. This is my first solo project. Database are stored using Firebase. Have fully functional CRUD for users."
           githubLink="https://github.com/Dust07/LinkNeverDieClone"
-          websiteLink="https://link-never-die-clone-bjlco0ahr-dust07.vercel.app/"
+          websiteLink="https://link-never-die-clone.vercel.app/"
         />
 
       </li>
