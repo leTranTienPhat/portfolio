@@ -3,18 +3,18 @@ import "./responsive.scss"
 import ProjectCard from '../../../reusable-components/ProjectCard/ProjectCard'
 import cart from "../../../../assets/images/Cart.png"
 import quizApp from "../../../../assets/images/Quiz.png"
-import discordClone from "../../../../assets/images/DiscordClone.png"
+import zomatoClone from "../../../../assets/images/Zomato.png"
 
 function SmallProjects() {
   return (
     <ul className="small-projects-container">
       <li>
         <ProjectCard
-          title="Discord's Landing page"
-          img={discordClone}
-          desc="Built from scratch using React. A small project i did as part of the Codedamn challenges."
-          githubLink="https://github.com/Dust07/DiscordClone"
-          websiteLink="https://github.com/Dust07/DiscordClone"
+          title="Zomato's Clone"
+          img={zomatoClone}
+          desc="Clone version of an Indian delivery website. Built to pratice using Carousel and CSS management."
+          githubLink="https://github.com/Dust07/zomato-clone-delivery-app"
+          websiteLink="https://zomato-clone-delivery-app.vercel.app/"
         />
       </li>
       <li>

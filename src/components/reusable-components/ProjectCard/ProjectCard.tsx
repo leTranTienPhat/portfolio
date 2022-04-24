@@ -12,7 +12,7 @@ function ProjectCard({
       <div className="project-card-wrapper">
         <div className="project-card-img">
           <h3>{title}</h3>
-          <img src={img} />
+          <img src={img} alt={title} />
         </div>
 
         <div className="project-card-desc">

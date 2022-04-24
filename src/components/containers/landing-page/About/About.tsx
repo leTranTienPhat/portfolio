@@ -18,7 +18,7 @@ function About() {
   return (
     <div className="about-container" id="aboutme">
       <div className="section">
-        <h2 className="split-section">What can i do?</h2>
+        <h2 className="split-section">Skills</h2>
       </div>
       <div className="about-desc">
         <p className="quotes">"Knowledge rests not upon truth alone, but upon error also"</p>
