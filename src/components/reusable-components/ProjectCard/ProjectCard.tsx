@@ -1,12 +1,12 @@
 import "./style.scss"
 import "./responsive.scss"
 function ProjectCard({
-  img,
   title,
+  img,
   desc,
   githubLink,
   websiteLink
-}: { img: string, title: string, desc: string, githubLink: string, websiteLink: string }) {
+}: { title: string, img: string, desc: string, githubLink: string, websiteLink: string }) {
   return (
     <div className="project-card-container">
       <div className="project-card-wrapper">

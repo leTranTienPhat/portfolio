@@ -2,7 +2,9 @@
   width: 100%;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   > li {
+    margin-bottom: 1rem;
     width: 45%;
   }
 }

@@ -2,31 +2,26 @@ import "./style.scss"
 import "./responsive.scss"
 
 import ProjectCard from '../../../reusable-components/ProjectCard/ProjectCard'
-import ColoShop from '../../../../assets/images/ColoShop.png'
-import LinkNeverPhai from "../../../../assets/images/LinkNeverPhai.png"
+import { largeProjects } from "../../../../data/data"
+
 
 function LargeProjects() {
   return (
     <ul className="large-projects-container">
-      <li>
-        <ProjectCard
-          title="StyleShop"
-          img={ColoShop}
-          desc="An MERN-stack E-commerce website that i collaborated with another mid-level developer friend of mine. I did about 50% of the front-end work in this project, which involve using React, Redux, SASS."
-          githubLink="https://github.com/StevenOng97/Ecommerce-Frontend"
-          websiteLink="https://ecommerce-frontend-git-products-id-stevenong97.vercel.app/"
-        />
-      </li>
-      <li>
-        <ProjectCard
-          title="LinkNeverPhai"
-          img={LinkNeverPhai}
-          desc="A clone version of LinkNerverDie's original website. This is my first solo project. Database are stored using Firebase. Have fully functional CRUD for users."
-          githubLink="https://github.com/Dust07/LinkNeverDieClone"
-          websiteLink="https://link-never-die-clone.vercel.app/"
-        />
-
-      </li>
+      {largeProjects.map((project, index) => {
+        const { title, img, desc, githubLink, websiteLink } = project
+        return (
+          <li key={index}>
+            <ProjectCard
+              title={title}
+              img={img}
+              desc={desc}
+              githubLink={githubLink}
+              websiteLink={websiteLink}
+            />
+          </li>
+        )
+      })}
     </ul>)
 }
 

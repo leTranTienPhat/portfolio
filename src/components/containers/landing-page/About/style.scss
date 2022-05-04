@@ -16,6 +16,7 @@
   }
 
   .skills-gridview {
+    margin-top: 2rem;
     display: grid;
     width: 100%;
     height: 40vh;
@@ -33,6 +34,7 @@
   .skills-list {
     display: flex;
     justify-content: space-around;
+    margin-top: 2rem;
     img {
       max-width: 150px;
     }
@@ -40,7 +42,7 @@
 }
 
 .small-icon {
-  max-width: 80px !important;
+  max-width: 100px !important;
 }
 
 .about-desc {

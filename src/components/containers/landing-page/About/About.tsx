@@ -6,13 +6,13 @@ import htmlIcon from "../../../../assets/images/html5.png"
 import cssIcon from "../../../../assets/images/css.png"
 import sassIcon from "../../../../assets/images/sass.webp"
 import reduxIcon from "../../../../assets/images/Redux.png"
+import nextIcon from "../../../../assets/images/next.png"
 import githubIcon from "../../../../assets/images/Github.png"
 import ptsIcon from "../../../../assets/images/PS.png"
 import aiIcon from "../../../../assets/images/AI.png"
 import vn from "../../../../assets/images/vn.png"
 import jp from "../../../../assets/images/jp.png"
 import usa from "../../../../assets/images/usa.png"
-
 
 function About() {
   return (
@@ -27,9 +27,10 @@ function About() {
       <div className="skills-gridview">
         <div className="skills-wrapper">
           <ul className="skills-list">
-            <li>
-              <img src={reactIcon} alt="reactIcon" />
-            </li>
+            <li><img src={reactIcon} alt="reactIcon" /></li>
+            <li><img src={nextIcon} alt="nextIcon" /></li>
+          </ul>
+          <ul className="skills-list">
             <li><img src={jsIcon} alt="jsIcon" /></li>
             <li><img src={htmlIcon} alt="htmlIcon" /></li>
             <li><img src={cssIcon} alt="cssIcon" /></li>
