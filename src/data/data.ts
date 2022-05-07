@@ -17,14 +17,14 @@ export const largeProjects = [
     img: netflixClone,
     desc: "Built using NextJS, Typescript, TailwindCSS, Login/Authenticate available with Firebase Email/Password Authenticate.",
     githubLink: "https://github.com/Dust07/netflix-clone",
-    websiteLink: "https://netflix-clone-dust07.vercel.app/",
+    websiteLink: "https://letrantienphat-netflix-clone.vercel.app/",
   },
   {
     title: "LinkNeverPhai",
     img: LinkNeverPhai,
     desc: "A clone version of LinkNerverDie's original website. This is my first solo project. Built using React, Typescript, ReduxJS, SCSS. CRUD functions for login/register users with Firebase",
     githubLink: "https://github.com/Dust07/LinkNeverDieClone",
-    websiteLink: "https://link-never-die-clone.vercel.app/",
+    websiteLink: "https://letrantienphat-linkneverphai.vercel.app/",
   }
 ]
 
