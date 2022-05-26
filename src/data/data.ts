@@ -21,7 +21,7 @@ export const projects = [
   {
     title: "Netflix's Clone",
     img: netflixClone,
-    desc: "Self-study project following online tutorial.",
+    desc: "Self-study project following online tutorial. Fetched API from TMDB.",
     teamSize: 1,
     technology: "NextJS, TailwindCSS, Firebase, RESTApi",
     features: "Modal Video Player, Responsive",
@@ -56,7 +56,7 @@ export const projects = [
     img: quizApp,
     desc: "An React mini quiz interactive game with timer, able to save highscores on local storage. ",
     teamSize: 1,
-    technology: "Javascript",
+    technology: "HTML, CSS, Javascript",
     features: "Time-based multiple choices, ranking results and store on local storage.",
     tag: "Online Tutorial",
     githubLink: "https://github.com/Dust07/QuizChallenge",
