@@ -22,8 +22,12 @@ button {
 }
 
 .toggle-theme-btn {
+  position: fixed;
+  top: 2%;
+  right: 2%;
   z-index: 1000;
 }
+
 :root {
   --gird-width: 30px;
   --gird-height: 30px;
@@ -33,6 +37,7 @@ button {
   --point-gap-width: calc(var(--gird-width) * 4);
   --point-gap-height: calc(var(--gird-height) * 4);
 }
+
 html,
 body {
   padding: 0;
@@ -47,6 +52,9 @@ body {
 }
 
 .ba-grid {
+  position: relative;
+  z-index: 1;
+
   background-image: 
 /*     radial-gradient(ellipse at center, #2883b6 0%, #084688 100%), */ radial-gradient(
       ellipse at bottom left,
@@ -63,7 +71,7 @@ body {
 .inner:after {
   content: "";
   position: absolute;
-  z-index: 1;
+  z-index: -1;
   top: 0;
   bottom: 0;
   left: 0;
