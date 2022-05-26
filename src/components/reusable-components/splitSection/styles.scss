@@ -1,20 +1,5 @@
 @import "../../../scss/variables.scss";
 
-.content-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.project-wrapper {
-  width: 90%;
-  .project-list {
-    display: flex;
-    list-style: none;
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-}
-
 .section {
   margin: 2rem 0;
   position: relative;
