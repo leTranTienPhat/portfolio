@@ -5,7 +5,7 @@
   flex-direction: column;
   box-shadow: rgba(255, 255, 255, 0.1) 0px 4px 16px, rgba(255, 255, 255, 0.1) 0px 8px 24px,
     rgba(255, 255, 255, 0.1) 0px 16px 56px;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: $transparent-white-bg;
   border-radius: $border-radius;
   color: $main-white;
   align-items: stretch;
@@ -75,4 +75,25 @@
 
 .project-card-container:hover {
   box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.project-card-tag {
+  display: inline-block;
+  font-size: 16px !important;
+  padding: 0.5rem;
+  border-radius: 30px;
+  margin: 1rem 0;
+  color: white !important;
+}
+
+.tag-team {
+  background-color: dodgerblue;
+}
+
+.tag-personal {
+  background-color: tomato;
+}
+
+.tag-tutorial {
+  background-color: slateblue;
 }

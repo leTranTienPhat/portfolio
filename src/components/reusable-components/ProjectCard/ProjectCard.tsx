@@ -2,6 +2,10 @@ import "./style.scss"
 import "./responsive.scss"
 function ProjectCard({ project }: any) {
   const { title, img, desc, teamSize, technology, features, tag, githubLink, websiteLink } = project
+  let tagValue = ""
+  if (tag[0] === "Team Project") tagValue = "team";
+  if (tag[0] === "Personal Project") tagValue = "personal";
+  if (tag[0] === "Online Tutorial") tagValue = "tutorial";
   return (
     <div className="project-card-container">
       <div className="project-card-wrapper">
@@ -16,7 +20,8 @@ function ProjectCard({ project }: any) {
             <p className="desc-text"><span>Team size: </span>{teamSize}</p>
             <p className="desc-text"><span>Technologies: </span>{technology}</p>
             <p className="desc-text"><span>Features: </span>{features}</p>
-            <p className="desc-text"><span>Tag: </span>{tag}</p>
+            <p className="desc-text"><span className={`project-card-tag tag-${tagValue}`}>{tag}</span></p>
+
           </div>
         </div>
 
