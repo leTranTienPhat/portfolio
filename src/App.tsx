@@ -5,9 +5,11 @@ import Footer from './components/containers/footer/Footer';
 import Header from './components/containers/header/Header';
 import Hero from './components/containers/hero/Hero';
 import LandingPage from './components/containers/landing-page/LandingPage';
-import Navigation from './components/containers/navigation/Navigation';
 import UpdatedNavigation from './components/containers/updatedNavigation/UpdatedNavigation';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faLayerGroup
+} from '@fortawesome/free-solid-svg-icons'
 function App() {
   const [lightMode, setLightMode] = useState(false)
 
@@ -24,9 +26,9 @@ function App() {
           <div className="particle particle-2 " />
         </>
       }
-
-
-      <button className="toggle-theme-btn" onClick={changeTheme}>Change theme</button>
+      <button className={`toggle-theme-btn ${lightMode && "light-mode"}`} onClick={changeTheme}>
+        <FontAwesomeIcon icon={faLayerGroup} className="toogle-theme-icon" />
+      </button>
       <div className={`${lightMode && "inner"} `}>
         {/* <Navigation /> */}
         <Header />

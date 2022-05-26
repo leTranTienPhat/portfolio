@@ -26,8 +26,23 @@ button {
   top: 2%;
   right: 2%;
   z-index: 1000;
+  padding: 0.5rem;
+  border-radius: 100%;
+  border: 0;
+  transition: 1s;
+}
+.toogle-theme-icon {
+  width: 30px;
+  height: 30px;
+  transition: 1s;
 }
 
+.light-mode {
+  transform: rotate(180deg);
+  > svg {
+    color: #4b3a4f;
+  }
+}
 :root {
   --gird-width: 30px;
   --gird-height: 30px;
