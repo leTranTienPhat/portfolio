@@ -1,8 +1,7 @@
 import "./style.scss"
 import "./responsive.scss"
 import About from "./About/About"
-import LargeProjects from "./LargeProjects/LargeProjects"
-import SmallProjects from "./SmallProjects/SmallProjects"
+import Projects from "./Projects/Projects"
 
 function LandingPage() {
   return (
@@ -12,8 +11,7 @@ function LandingPage() {
       </div>
       <div className="project-wrapper">
         <div className="project-list">
-          <LargeProjects />
-          <SmallProjects />
+          <Projects />
         </div>
       </div>
       <About />

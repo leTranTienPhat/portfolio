@@ -1,8 +1,7 @@
 @import "../../../../scss/variables.scss";
 
 @media screen and (max-width: $ipadS) {
-  .large-projects-container {
-    flex-wrap: wrap;
+  .projects-container {
     > li {
       margin: 1rem auto;
       width: 100%;

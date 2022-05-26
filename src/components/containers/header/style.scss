@@ -5,12 +5,8 @@
   margin-top: 0.5rem;
   left: 5%;
   gap: 2rem;
-  .logo {
-    width: 300px;
-  }
-  .header-text {
-    font-family: "COMIC SANS MS", "Arial Narrow", Arial, sans-serif;
-    font-size: 40px;
-    color: $main-yellow;
+  z-index: 99;
+  .header-logo {
+    max-width: 300px;
   }
 }

@@ -8,8 +8,17 @@
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: $border-radius;
   color: $main-white;
+  align-items: stretch;
+  margin: 1rem auto;
+  width: 30%;
+  transition: 0.5s;
   .project-card-wrapper {
     border-radius: $border-radius;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     .project-card-img {
       color: $main-yellow;
       text-align: center;
@@ -22,35 +31,48 @@
         font-size: 2rem;
       }
     }
-    .project-card-desc {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      .project-card-desc-text {
-        text-align: center;
-        width: 80%;
-      }
-      .project-link-btn {
-        margin: 1rem 1rem;
-        background-color: $main-yellow;
-        font-weight: 700;
-        color: black;
-        width: 100px;
-        height: 40px;
-        border-radius: $border-radius;
-        border: none;
-      }
-    }
   }
 }
-
+.project-card-desc {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10%;
+}
 .github {
   background-color: $main-white !important;
 }
-
+.github:hover {
+  background-color: $main-white-hover !important;
+}
+.project-link-btn {
+  margin: 1rem 1rem;
+  background-color: $main-yellow;
+  font-weight: 700;
+  color: black;
+  width: 35%;
+  height: 40px;
+  border-radius: $border-radius;
+  border: none;
+  transition: 0.5s;
+}
+.project-link-btn:hover {
+  width: 40%;
+  background-color: $main-yellow-hover;
+}
 .project-btn-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+}
+
+.desc-text {
+  line-height: 30px;
+  span {
+    color: $main-yellow;
+    font-size: 20px;
+  }
+}
+
+.project-card-container:hover {
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }

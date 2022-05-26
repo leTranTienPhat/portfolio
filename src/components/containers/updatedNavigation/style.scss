@@ -1,0 +1,10 @@
+@import "../../../scss/variables.scss";
+
+.updated-navigation-container {
+  position: fixed;
+  width: 80px;
+  background-color: red;
+  right: 0;
+  bottom: 50%;
+  transform: translateY(-25%);
+}
