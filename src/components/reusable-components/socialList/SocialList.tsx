@@ -7,6 +7,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 
 import "./styles.scss"
+import "./responsive.scss"
 
 const SocialList = () => {
   return (

@@ -1,5 +1,4 @@
 import "./style.scss"
-import "./responsive.scss"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faWarehouse,
