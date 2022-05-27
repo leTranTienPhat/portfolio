@@ -26,7 +26,7 @@ function ProjectCard({ project }: any) {
         </div>
 
         <div className="project-btn-wrapper">
-          <button className="project-link-btn github" onClick={() => window.open(githubLink)}>Github</button>
+          <button className="project-link-btn github-btn" onClick={() => window.open(githubLink)}>Github</button>
           <button className="project-link-btn" onClick={() => window.open(websiteLink)}>View Website</button>
         </div>
       </div>

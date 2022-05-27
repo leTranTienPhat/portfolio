@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.scss';
 import './particle.scss'
+import './lightTheme.scss'
 import Footer from './components/containers/footer/Footer';
 import Header from './components/containers/header/Header';
 import Hero from './components/containers/hero/Hero';
@@ -8,32 +9,47 @@ import UpdatedNavigation from './components/containers/updatedNavigation/Updated
 import Projects from './components/containers/projects/Projects';
 import About from './components/containers/about/About';
 import SplitSection from './components/reusable-components/splitSection/SplitSection';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faLayerGroup
-} from '@fortawesome/free-solid-svg-icons'
 import { useInView } from 'react-intersection-observer';
 
 function App() {
-  const [lightMode, setLightMode] = useState(false)
+  const [theme, setTheme] = useState("dark-theme")
+  const [showThemeOpt, setShowThemeOpt] = useState(false)
   const [ref, inView, entry] = useInView()
-  const changeTheme = () => {
-    setLightMode(!lightMode)
-    console.log(entry)
+  const changeTheme = (theme: string) => {
+    setTheme(theme)
+  }
+  const showThemeOptions = () => {
+    setShowThemeOpt(true)
+  }
+  const hideThemeOptions = () => {
+    setShowThemeOpt(false)
   }
 
   return (
-    <div className={`App ${lightMode ? "grid-bg ba-grid anim" : "dark page-bg animation-wrapper"} `}>
-      {!lightMode &&
+    <div className={`App ${theme === 'dark-theme' ? "dark-theme page-bg animation-wrapper" : `grid-bg ba-grid anim ${theme}`} `}
+    >
+      <div className="theme-selection-container" onMouseEnter={showThemeOptions} onMouseLeave={hideThemeOptions}>
+        Select Theme
+        {showThemeOpt &&
+          <div className="theme-options">
+            <button className="theme-option-btn black-opt" onClick={() => changeTheme('dark-theme')}>
+            </button>
+            <button className="theme-option-btn pink-opt" onClick={() => changeTheme('pink-theme')}>
+            </button>
+            <button className="theme-option-btn blue-opt" onClick={() => changeTheme('blue-theme')}>
+            </button>
+            <button className="theme-option-btn green-opt" onClick={() => changeTheme('green-theme')}>
+            </button>
+          </div>}
+
+      </div>
+      {theme === 'dark-theme' &&
         <>
           <div className="particle particle-1 " />
           <div className="particle particle-2 " />
         </>
       }
-      <button className={`toggle-theme-btn ${lightMode && "light-mode"}`} onClick={changeTheme}>
-        <FontAwesomeIcon icon={faLayerGroup} className="toogle-theme-icon" />
-      </button>
-      <div className={`${lightMode && "inner"} `}>
+      <div className={`${theme !== 'dark-theme' && "inner"} `}>
         <Header />
         <UpdatedNavigation />
         <Hero />

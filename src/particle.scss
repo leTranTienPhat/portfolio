@@ -25,7 +25,7 @@ $time-4: 200s;
 html,
 .page-bg {
   background-image: url("./assets/images/background.jpg");
-  background-size: cover repeat;
+  background-size: contain;
 }
 
 .particle,
@@ -102,7 +102,6 @@ html,
 
 h4 {
   color: #fff;
-  font-family: Monoton;
   -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
   -moz-animation: neon1 1.5s ease-in-out infinite alternate;
   animation: neon1 1.5s ease-in-out infinite alternate;

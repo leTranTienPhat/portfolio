@@ -52,7 +52,6 @@
 
 .about-desc {
   text-align: center;
-  font-family: cursive;
   font-size: 30px;
 }
 
@@ -60,9 +59,15 @@
   display: flex;
   width: 100%;
   justify-content: space-around;
-  padding-bottom: 2rem;
+  align-items: flex-end;
+  padding: 1rem 0;
+  overflow: hidden;
   img {
-    max-width: 200px;
+    width: 200px;
+    transition: 0.5s;
+  }
+  img:hover {
+    transform: scale(1.1);
   }
 }
 .languages-card {

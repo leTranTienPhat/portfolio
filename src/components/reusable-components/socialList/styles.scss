@@ -1,0 +1,38 @@
+@import "../../../scss/variables.scss";
+
+.social-list {
+  align-self: center;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-evenly;
+  overflow: hidden;
+  svg {
+    width: 3rem;
+    height: 3rem;
+    transition: 0.2s;
+  }
+  svg:hover {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  .github,
+  .facebook,
+  .instagram,
+  .linkedin {
+    color: rgb(233, 233, 233);
+  }
+  .github:hover {
+    color: white;
+  }
+  .facebook:hover {
+    color: $facebook;
+  }
+  .instagram:hover {
+    color: $instagram;
+  }
+  .linkedin:hover {
+    color: $linkedin;
+  }
+}

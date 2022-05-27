@@ -18,33 +18,8 @@
   width: 40%;
   height: 10%;
   display: flex;
-  .social-list {
-    align-self: center;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: space-around;
-
-    svg {
-      width: 3rem;
-      height: 3rem;
-      transition: 0.2s;
-    }
-    svg:hover {
-      width: 3.5rem;
-      height: 3.5rem;
-    }
-    .facebook:hover {
-      color: $facebook;
-    }
-    .instagram:hover {
-      color: $instagram;
-    }
-    .linkedin:hover {
-      color: $linkedin;
-    }
-  }
+  justify-content: space-around;
+  align-items: center;
 }
 
 .bio-wrapper {
@@ -67,6 +42,7 @@
   border: none;
   z-index: 1;
   transition: 0.5s;
+  font-family: "Roboto", sans-serif;
 }
 .get-resume-btn:hover {
   background-color: $main-yellow-hover;

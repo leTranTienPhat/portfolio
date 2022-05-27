@@ -10,9 +10,9 @@ import nextIcon from "../../../assets/images/next.png"
 import githubIcon from "../../../assets/images/Github.png"
 import ptsIcon from "../../../assets/images/PS.png"
 import aiIcon from "../../../assets/images/AI.png"
-import vn from "../../../assets/images/vn.png"
-import jp from "../../../assets/images/jp.png"
-import usa from "../../../assets/images/usa.png"
+import vn from "../../../assets/images/vn-flag.webp"
+import jp from "../../../assets/images/jp-flag.webp"
+import usa from "../../../assets/images/us-flag.webp"
 import SplitSection from "../../reusable-components/splitSection/SplitSection"
 
 function About() {

@@ -55,7 +55,7 @@ export const projects = [
   {
     title: "Quiz App",
     img: quizApp,
-    desc: "An React mini quiz interactive game with timer, able to save highscores on local storage. ",
+    desc: "A ReactJS mini quiz interactive game with timer, able to save highscores on local storage. ",
     teamSize: 1,
     technology: "HTML, CSS, Javascript",
     features: "Time-based multiple choices, ranking results and store on local storage.",
@@ -66,7 +66,7 @@ export const projects = [
   {
     title: "Shopping cart",
     img: cart,
-    desc: "Shopping cart functions built when i first started learning React and Hooks.",
+    desc: "Shopping cart functions built when i started learning ReactJS.",
     teamSize: 1,
     technology: "ReactJS",
     features: "Real-time shopping cart",

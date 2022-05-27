@@ -1,12 +1,7 @@
 import "./style.scss"
 import "./responsive.scss"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faFacebook,
-  faInstagram,
-  faGithub,
-  faLinkedin
-} from '@fortawesome/free-brands-svg-icons'
+import SocialList from "../../reusable-components/socialList/SocialList"
+
 
 function Footer() {
   const name = "LÊ TRẦN TIẾN PHÁT"
@@ -26,28 +21,7 @@ function Footer() {
         </div>
 
         <div className="footer-social-wrapper">
-          <ul className="social-list">
-            <a href="https://www.facebook.com/DMs.Cloud/">
-              <li>
-                <FontAwesomeIcon icon={faFacebook} className="facebook" />
-              </li>
-            </a>
-            <a href="https://www.instagram.com/tienphat07/">
-              <li>
-                <FontAwesomeIcon icon={faInstagram} className="instagram" />
-              </li>
-            </a>
-            <a href="https://github.com/Dust07">
-              <li>
-                <FontAwesomeIcon icon={faGithub} />
-              </li>
-            </a>
-            <a href="https://www.linkedin.com/in/letrantienphat/">
-              <li>
-                <FontAwesomeIcon icon={faLinkedin} className="linkedin" />
-              </li>
-            </a>
-          </ul>
+          <SocialList />
         </div>
       </div>
     </div>
