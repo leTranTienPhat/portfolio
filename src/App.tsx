@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './App.scss';
 import './particle.scss'
-import './lightTheme.scss'
+import './themes.scss'
 import Footer from './components/containers/footer/Footer';
 import Header from './components/containers/header/Header';
 import Hero from './components/containers/hero/Hero';
@@ -12,7 +12,7 @@ import SplitSection from './components/reusable-components/splitSection/SplitSec
 import { useInView } from 'react-intersection-observer';
 
 function App() {
-  const [theme, setTheme] = useState("dark-theme")
+  const [theme, setTheme] = useState("red-theme")
   const [showThemeOpt, setShowThemeOpt] = useState(false)
   const { ref: heroRef, inView: heroInView } = useInView()
   const { ref: projectsRef, inView: projectsInView } = useInView()
@@ -35,13 +35,13 @@ function App() {
         Select Theme
         {showThemeOpt &&
           <div className="theme-options">
-            <button className="theme-option-btn black-opt" onClick={() => changeTheme('dark-theme')}>
-            </button>
-            <button className="theme-option-btn pink-opt" onClick={() => changeTheme('pink-theme')}>
+            <button className="theme-option-btn red-opt" onClick={() => changeTheme('red-theme')}>
             </button>
             <button className="theme-option-btn blue-opt" onClick={() => changeTheme('blue-theme')}>
             </button>
             <button className="theme-option-btn green-opt" onClick={() => changeTheme('green-theme')}>
+            </button>
+            <button className="theme-option-btn black-opt" onClick={() => changeTheme('dark-theme')}>
             </button>
           </div>}
 
