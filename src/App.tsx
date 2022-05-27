@@ -14,7 +14,11 @@ import { useInView } from 'react-intersection-observer';
 function App() {
   const [theme, setTheme] = useState("dark-theme")
   const [showThemeOpt, setShowThemeOpt] = useState(false)
-  const [ref, inView, entry] = useInView()
+  const { ref: heroRef, inView: heroInView } = useInView()
+  const { ref: projectsRef, inView: projectsInView } = useInView()
+  const { ref: skillsRef, inView: skillsInView } = useInView()
+  const { ref: contactRef, inView: contactInView } = useInView()
+
   const changeTheme = (theme: string) => {
     setTheme(theme)
   }
@@ -24,7 +28,6 @@ function App() {
   const hideThemeOptions = () => {
     setShowThemeOpt(false)
   }
-
   return (
     <div className={`App ${theme === 'dark-theme' ? "dark-theme page-bg animation-wrapper" : `grid-bg ba-grid anim ${theme}`} `}
     >
@@ -51,12 +54,12 @@ function App() {
       }
       <div className={`${theme !== 'dark-theme' && "inner"} `}>
         <Header />
-        <UpdatedNavigation />
-        <Hero />
+        <UpdatedNavigation heroInView={heroInView} projectsInView={projectsInView} skillsInView={skillsInView} contactInView={contactInView} />
+        <Hero ref={heroRef} />
         <SplitSection value="Projects" />
-        <Projects />
-        <About />
-        <Footer />
+        <Projects ref={projectsRef} />
+        <About ref={skillsRef} />
+        <Footer ref={contactRef} />
       </div>
     </div>
   );

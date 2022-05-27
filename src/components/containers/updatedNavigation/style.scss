@@ -16,14 +16,18 @@
   flex-direction: column;
   justify-content: space-around;
   border-radius: 20px 0 0 20px;
-  > svg {
-    width: 15px;
-    height: 15px;
-    padding: 8px;
-    border-radius: 100%;
-    background-color: $main-yellow-inactive;
-  }
-  > .current-section {
-    background-color: $main-yellow;
+  > a {
+    > svg {
+      width: 15px;
+      height: 15px;
+      padding: 8px;
+      border-radius: 100%;
+      background-color: $main-yellow-inactive;
+      transition: 1s;
+    }
+    > .current-section {
+      background-color: $main-yellow;
+      transition: 1s;
+    }
   }
 }

@@ -2,10 +2,11 @@ import "./style.scss"
 import "./responsive.scss"
 import ProjectCard from '../../reusable-components/ProjectCard/ProjectCard'
 import { projects } from "../../../data/data"
+import { forwardRef } from "react"
 
-function Projects() {
+const Projects = forwardRef((props, ref: any) => {
   return (
-    <div className="projects-container">
+    <div className="projects-container" ref={ref} id="section2">
       <div className="projects-wrapper">
         {projects.map((project, index) => {
           return (
@@ -19,6 +20,6 @@ function Projects() {
 
     </div>
   )
-}
+})
 
 export default Projects

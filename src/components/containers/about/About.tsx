@@ -14,10 +14,11 @@ import vn from "../../../assets/images/vn-flag.webp"
 import jp from "../../../assets/images/jp-flag.webp"
 import usa from "../../../assets/images/us-flag.webp"
 import SplitSection from "../../reusable-components/splitSection/SplitSection"
+import { forwardRef } from "react"
 
-function About() {
+const About = forwardRef((props, ref: any) => {
   return (
-    <div className="about-container">
+    <div className="about-container" ref={ref} id="section3">
       <div className="about-wrapper">
         <SplitSection value="Skills" />
         <div className="about-desc">
@@ -68,6 +69,6 @@ function About() {
     </div>
 
   )
-}
+})
 
 export default About
