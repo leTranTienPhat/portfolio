@@ -1,0 +1,29 @@
+@import "../../../scss/variables.scss";
+
+@media screen and (max-width: $ipadL) {
+  .social-list {
+    svg {
+      width: 2rem;
+      height: 2rem;
+      transition: 0.2s;
+    }
+    svg:hover {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .social-list {
+    svg {
+      width: 1.5rem;
+      height: 1.5rem;
+      transition: 0.2s;
+    }
+    svg:hover {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+}

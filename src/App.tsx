@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './App.scss';
 import './particle.scss'
 import './themes.scss'
@@ -14,10 +14,14 @@ import { useInView } from 'react-intersection-observer';
 function App() {
   const [theme, setTheme] = useState("red-theme")
   const [showThemeOpt, setShowThemeOpt] = useState(false)
-  const { ref: heroRef, inView: heroInView } = useInView()
-  const { ref: projectsRef, inView: projectsInView } = useInView()
-  const { ref: skillsRef, inView: skillsInView } = useInView()
-  const { ref: contactRef, inView: contactInView } = useInView()
+  const [heroRef, heroInView] = useInView()
+  const [projectsRef, projectsInView] = useInView()
+  const [skillsRef, skillsInView] = useInView()
+  const [contactRef, contactInView] = useInView()
+
+  useEffect(() => {
+    console.log("Re-rendering...")
+  })
 
   const changeTheme = (theme: string) => {
     setTheme(theme)
@@ -44,23 +48,16 @@ function App() {
             <button className="theme-option-btn black-opt" onClick={() => changeTheme('dark-theme')}>
             </button>
           </div>}
-
       </div>
-      {theme === 'dark-theme' &&
-        <>
-          <div className="particle particle-1 " />
-          <div className="particle particle-2 " />
-        </>
-      }
-      <div className={`${theme !== 'dark-theme' && "inner"} `}>
-        <Header />
-        <UpdatedNavigation heroInView={heroInView} projectsInView={projectsInView} skillsInView={skillsInView} contactInView={contactInView} />
-        <Hero ref={heroRef} />
-        <SplitSection value="Projects" />
-        <Projects ref={projectsRef} />
-        <About ref={skillsRef} />
-        <Footer ref={contactRef} />
-      </div>
+      <div className="particle particle-1 " />
+      <div className="particle particle-2 " />
+      <Header />
+      <UpdatedNavigation heroInView={heroInView} projectsInView={projectsInView} skillsInView={skillsInView} contactInView={contactInView} />
+      <Hero ref={heroRef} />
+      <SplitSection value="Projects" />
+      <Projects ref={projectsRef} />
+      <About ref={skillsRef} />
+      <Footer ref={contactRef} />
     </div>
   );
 }

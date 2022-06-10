@@ -1,4 +1,4 @@
-@import "../../scss/variables.scss";
+@import "../../../scss/variables.scss";
 
 @media screen and (max-width: $pc) {
   .split-section::before {
@@ -15,10 +15,10 @@
     margin: 0 !important;
   }
   .split-section::before {
-    width: 0;
+    display: none;
   }
   .split-section::after {
-    width: 0;
+    display: none;
   }
   .quotes {
     display: none;

@@ -1,5 +1,5 @@
 import "./styles.scss"
-
+import "./responsive.scss"
 const SplitSection = ({ value }: { value: string }) => {
   return (
     <div className="section">
