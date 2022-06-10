@@ -25,12 +25,11 @@
     margin-top: 2rem;
     display: grid;
     width: 100%;
-    grid-template-columns: 60% 1fr;
     .skills-wrapper {
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
-      text-align: center;
+      justify-content: center;
+      align-items: center;
     }
     .main-skills-library-wrapper {
       background: orange;
@@ -38,8 +37,10 @@
   }
   .skills-list {
     display: flex;
+    width: 100%;
     justify-content: space-around;
-    margin-top: 2rem;
+    align-items: center;
+    margin: 2rem 0;
     img {
       max-width: 150px;
     }

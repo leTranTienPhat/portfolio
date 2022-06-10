@@ -1,5 +1,8 @@
 import "./style.scss"
 import "./responsive.scss"
+import { forwardRef } from "react"
+import SplitSection from "../../reusable-components/splitSection/SplitSection"
+
 import reactIcon from "../../../assets/images/React.png"
 import jsIcon from "../../../assets/images/javascript.png"
 import htmlIcon from "../../../assets/images/html5.png"
@@ -13,8 +16,9 @@ import aiIcon from "../../../assets/images/AI.png"
 import vn from "../../../assets/images/vn-flag.webp"
 import jp from "../../../assets/images/jp-flag.webp"
 import usa from "../../../assets/images/us-flag.webp"
-import SplitSection from "../../reusable-components/splitSection/SplitSection"
-import { forwardRef } from "react"
+import phpIcon from "../../../assets/images/PHP-logo.png"
+import vueIcon from "../../../assets/images/vuejs.png"
+import nuxtIcon from "../../../assets/images/Nuxt_logo.png"
 
 const About = forwardRef((props, ref: any) => {
   return (
@@ -28,26 +32,29 @@ const About = forwardRef((props, ref: any) => {
         <div className="skills-gridview">
           <div className="skills-wrapper">
             <ul className="skills-list">
-              <li><img src={reactIcon} alt="reactIcon" /></li>
-              <li><img src={nextIcon} alt="nextIcon" /></li>
-            </ul>
-            <ul className="skills-list">
-              <li><img src={jsIcon} alt="jsIcon" /></li>
               <li><img src={htmlIcon} alt="htmlIcon" /></li>
               <li><img src={cssIcon} alt="cssIcon" /></li>
-            </ul>
-          </div>
-          <div className="skills-wrapper">
-            <ul className="skills-list">
-              <li> <img src={reduxIcon} alt="reduxIcon" className="small-icon" /> </li>
-              <li> <img src={sassIcon} alt="sassIcon" className="small-icon" /> </li>
-              <li> <img src={githubIcon} alt="githubIcon" className="small-icon" /> </li>
+              <li><img src={jsIcon} alt="jsIcon" /></li>
+              <li><img src={phpIcon} alt="phpIcon" /></li>
             </ul>
             <ul className="skills-list">
-              <li> <img src={ptsIcon} alt="psIcon" className="small-icon" /> </li>
-              <li> <img src={aiIcon} alt="aiIcon" className="small-icon" />  </li>
+              <li><img src={reactIcon} alt="reactIcon" /></li>
+              <li><img src={nextIcon} alt="nextIcon" /></li>
+              <li><img src={vueIcon} alt="vueIcon" /></li>
+              <li><img src={nuxtIcon} alt="nuxtIcon" /></li>
+            </ul>
+
+            <ul className="skills-list">
+              <li> <img src={reduxIcon} alt="reduxIcon" /> </li>
+              <li> <img src={sassIcon} alt="sassIcon" /> </li>
+              <li> <img src={githubIcon} alt="githubIcon" /> </li>
+            </ul>
+            <ul className="skills-list">
+              <li> <img src={ptsIcon} alt="psIcon" /> </li>
+              <li> <img src={aiIcon} alt="aiIcon" />  </li>
             </ul>
           </div>
+
         </div>
 
         <SplitSection value="Languages" />
