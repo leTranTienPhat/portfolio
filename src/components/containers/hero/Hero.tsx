@@ -2,7 +2,6 @@ import "./style.scss"
 import "./responsive.scss"
 import { forwardRef } from "react"
 import SocialList from "../../reusable-components/socialList/SocialList"
-import * as React from 'react'
 
 
 const Hero = forwardRef((props, ref: any) => {
@@ -16,12 +15,6 @@ const Hero = forwardRef((props, ref: any) => {
           <button className="get-resume-btn" onClick={() => window.open(myCVLink)}>Get CV</button>
           <SocialList />
         </div>
-        {/* <div className="bio-wrapper">
-          <p className="extra-info">I have studied programing languages for 3 years in college before dropping out due to family issues. But now i want to get back to writing codes, because this is what i do best.
-          </p>
-          <p className="bio-important-info">I have been self-studing Javascript, ReactJS, NextJS for 6 months, did some small projects here and there to put my knowledge into practice.
-          </p>
-        </div> */}
       </div>
     </div>
   )

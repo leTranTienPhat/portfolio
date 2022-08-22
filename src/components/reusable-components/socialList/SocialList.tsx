@@ -22,7 +22,7 @@ const SocialList = () => {
           <FontAwesomeIcon icon={faInstagram} className="instagram" />
         </li>
       </a>
-      <a href="https://github.com/Dust07">
+      <a href="https://github.com/leTranTienPhat">
         <li>
           <FontAwesomeIcon icon={faGithub} className="github" />
         </li>

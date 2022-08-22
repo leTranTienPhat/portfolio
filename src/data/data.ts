@@ -36,7 +36,7 @@ export const projects = [
   {
     title: "StyleShop",
     img: ColoShop,
-    desc: "An MERN-stack E-commerce website that i collaborated with another mid-level developer friend of mine. I did about 50% of the front-end work in this project.",
+    desc: "MERN-stack E-commerce website that i collaborated with another mid-level developer friend of mine. I did about 50% of the front-end work in this project.",
     teamSize: 2,
     technology: "ReactJS, Typescript, SCSS, Redux",
     features: "Animated Transitions, Modern UI, SPA, Responsive",
