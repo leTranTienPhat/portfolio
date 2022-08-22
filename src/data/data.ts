@@ -1,3 +1,5 @@
+import khaoxin from '../assets/images/khaoxin.png'
+import nifehub from '../assets/images/nifehub.png'
 import ColoShop from '../assets/images/ColoShop.png'
 import LinkNeverPhai from "../assets/images/LinkNeverPhai.png"
 import cart from "../assets/images/Cart.png"
@@ -10,9 +12,31 @@ import movieNuxtjs from "../assets/images/movie-app-nuxtjs.png"
 
 export const projects = [
   {
+    title: "Khaoxin Milk Tea",
+    img: khaoxin,
+    desc: "Main website for a milk tea brand located in Ho Chi Minh City, Vietnam. This website is part of a brand identity building process, which also include UI/UX design, logo design, business card, cup design, etc.",
+    teamSize: 1,
+    technology: "NextJS, Module SCSS",
+    features: "SEO Optimize, Animated Transitions, Modern UI, SPA, Responsive",
+    tag: ["Freelance Project"],
+    githubLink: null,
+    websiteLink: "https://khaoxin.vercel.app/",
+  },
+  {
+    title: "Nifehub",
+    img: nifehub,
+    desc: "Large scale Global social platform planning on release at the end of 2022, my job here is to build HTML based on Figma designs and some CRUD on Nifehub's business subdomain backend functions",
+    teamSize: 10,
+    technology: "VueJS, CodeIgniter 4, PHP, PostgreSQL",
+    features: "Big Data, MVC model, SEO Optimized, Responsive",
+    tag: ["Freelance Project"],
+    githubLink: null,
+    websiteLink: null,
+  },
+  {
     title: "StyleShop",
     img: ColoShop,
-    desc: "An MERN-stack E-commerce website that i collaborated with another mid-level developer friend of mine. I did about 50% of the front-end work in this project.",
+    desc: "MERN-stack E-commerce website that i collaborated with another mid-level developer friend of mine. I did about 50% of the front-end work in this project.",
     teamSize: 2,
     technology: "ReactJS, Typescript, SCSS, Redux",
     features: "Animated Transitions, Modern UI, SPA, Responsive",

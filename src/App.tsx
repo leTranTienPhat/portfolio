@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import './App.scss';
 import './particle.scss'
 import './themes.scss'
@@ -10,18 +10,16 @@ import Projects from './components/containers/projects/Projects';
 import About from './components/containers/about/About';
 import SplitSection from './components/reusable-components/splitSection/SplitSection';
 import { useInView } from 'react-intersection-observer';
+// import Modal from './components/modal/Modal';
 
 function App() {
   const [theme, setTheme] = useState("red-theme")
   const [showThemeOpt, setShowThemeOpt] = useState(false)
+  // const [showModal, setShowModal] = useState(true)
   const [heroRef, heroInView] = useInView()
   const [projectsRef, projectsInView] = useInView()
   const [skillsRef, skillsInView] = useInView()
   const [contactRef, contactInView] = useInView()
-
-  useEffect(() => {
-    console.log("Re-rendering...")
-  })
 
   const changeTheme = (theme: string) => {
     setTheme(theme)
@@ -32,9 +30,17 @@ function App() {
   const hideThemeOptions = () => {
     setShowThemeOpt(false)
   }
+  // const handleCloseModal = () => {
+  //   setShowModal(false)
+  // }
+  // const handleOpenModal = () => {
+  //   setShowModal(true)
+  // }
+
   return (
-    <div className={`App ${theme === 'dark-theme' ? "dark-theme page-bg animation-wrapper" : `grid-bg ba-grid anim ${theme}`} `}
+    <div className={`App ${theme === 'dark-theme' ? "dark-theme page-bg animation-wrapper" : `grid-bg ba-grid anim ${theme}`}`}
     >
+      {/* {showModal && <Modal handleCloseModal={handleCloseModal} />} */}
       <div className="theme-selection-container" onMouseEnter={showThemeOptions} onMouseLeave={hideThemeOptions}>
         Select Theme
         {showThemeOpt &&

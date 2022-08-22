@@ -11,6 +11,7 @@ import sassIcon from "../../../assets/images/sass.webp"
 import reduxIcon from "../../../assets/images/Redux.png"
 import nextIcon from "../../../assets/images/next.png"
 import githubIcon from "../../../assets/images/Github.png"
+import jiraIcon from "../../../assets/images/jira.png"
 import ptsIcon from "../../../assets/images/PS.png"
 import aiIcon from "../../../assets/images/AI.png"
 import vn from "../../../assets/images/vn-flag.webp"
@@ -48,6 +49,7 @@ const About = forwardRef((props, ref: any) => {
               <li> <img src={reduxIcon} alt="reduxIcon" /> </li>
               <li> <img src={sassIcon} alt="sassIcon" /> </li>
               <li> <img src={githubIcon} alt="githubIcon" /> </li>
+              <li> <img src={jiraIcon} alt="jiraIcon" /> </li>
             </ul>
             <ul className="skills-list">
               <li> <img src={ptsIcon} alt="psIcon" /> </li>
