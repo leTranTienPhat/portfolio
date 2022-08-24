@@ -1,8 +1,14 @@
 @import "../../../scss/variables.scss";
 
+@media screen and (max-width: $ipadL) {
+  .project-card-container {
+    flex-basis: 40%;
+  }
+}
 @media screen and (max-width: $ipadS) {
   .project-card-container {
     width: 100%;
+    flex-basis: auto;
   }
   .desc-text {
     font-size: 12px !important;
