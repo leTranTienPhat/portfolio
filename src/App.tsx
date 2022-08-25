@@ -1,7 +1,9 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './App.scss';
 import './particle.scss'
 import './themes.scss'
+import { useInView } from 'react-intersection-observer';
+import { useScrollBlock } from './helper/ScrollBlock';
 import Footer from './components/containers/footer/Footer';
 import Header from './components/containers/header/Header';
 import Hero from './components/containers/hero/Hero';
@@ -9,13 +11,14 @@ import UpdatedNavigation from './components/containers/updatedNavigation/Updated
 import Projects from './components/containers/projects/Projects';
 import About from './components/containers/about/About';
 import SplitSection from './components/reusable-components/splitSection/SplitSection';
-import { useInView } from 'react-intersection-observer';
-// import Modal from './components/modal/Modal';
+import Intro from './components/intro/Intro';
 
 function App() {
   const [theme, setTheme] = useState("red-theme")
   const [showThemeOpt, setShowThemeOpt] = useState(false)
-  // const [showModal, setShowModal] = useState(true)
+  const [isIntro, setIsIntro] = useState(true)
+  const [blockScroll, allowScroll] = useScrollBlock();
+
   const [heroRef, heroInView] = useInView()
   const [projectsRef, projectsInView] = useInView()
   const [skillsRef, skillsInView] = useInView()
@@ -30,17 +33,18 @@ function App() {
   const hideThemeOptions = () => {
     setShowThemeOpt(false)
   }
-  // const handleCloseModal = () => {
-  //   setShowModal(false)
-  // }
-  // const handleOpenModal = () => {
-  //   setShowModal(true)
-  // }
+
+  useEffect(() => {
+    isIntro ? blockScroll() : allowScroll();
+  }, [isIntro])
+
+  setTimeout(() => {
+    setIsIntro(false)
+  }, 4000)
 
   return (
-    <div className={`App ${theme === 'dark-theme' ? "dark-theme page-bg animation-wrapper" : `grid-bg ba-grid anim ${theme}`}`}
+    <div className={`App ${theme === 'dark-theme' ? "page-bg animation-wrapper" : `grid-bg ba-grid anim ${theme} `}`}
     >
-      {/* {showModal && <Modal handleCloseModal={handleCloseModal} />} */}
       <div className="theme-selection-container" onMouseEnter={showThemeOptions} onMouseLeave={hideThemeOptions}>
         Select Theme
         {showThemeOpt &&
@@ -57,6 +61,7 @@ function App() {
       </div>
       <div className="particle particle-1 " />
       <div className="particle particle-2 " />
+      <Intro theme={theme} />
       <Header />
       <UpdatedNavigation heroInView={heroInView} projectsInView={projectsInView} skillsInView={skillsInView} contactInView={contactInView} />
       <Hero ref={heroRef} />
