@@ -61,7 +61,7 @@ function App() {
       </div>
       <div className="particle particle-1 " />
       <div className="particle particle-2 " />
-      <Intro theme={theme} />
+      <Intro />
       <Header />
       <UpdatedNavigation heroInView={heroInView} projectsInView={projectsInView} skillsInView={skillsInView} contactInView={contactInView} />
       <Hero ref={heroRef} />

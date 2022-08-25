@@ -1,4 +1,16 @@
-$intro-font-size-L: 60px;
+@import "../../scss/variables.scss";
+:root {
+  --intro-font-size: 60px;
+  @media screen and (max-width: #{$pc}) {
+    --intro-font-size: 40px;
+  }
+  @media screen and (max-width: #{$ipadS}) {
+    --intro-font-size: 20px;
+  }
+  @media screen and (max-width: #{$tablet}) {
+    --intro-font-size: 16px;
+  }
+}
 
 .intro-wrapper {
   width: 100%;
@@ -17,7 +29,7 @@ $intro-font-size-L: 60px;
   align-items: center;
 }
 .box {
-  font-size: $intro-font-size-L;
+  font-size: var(--intro-font-size);
   margin: 0;
   padding: 0;
   user-select: none;
@@ -36,22 +48,22 @@ $intro-font-size-L: 60px;
 @keyframes FadeLTR {
   0% {
     opacity: 0;
-    transform: translate(-100px, -$intro-font-size-L/2);
+    transform: translate(-100px, calc(var(--intro-font-size) / -2));
   }
   100% {
     opacity: 1;
-    transform: translate(0, -$intro-font-size-L/2);
+    transform: translate(0, calc(var(--intro-font-size) / -2));
   }
 }
 
 @keyframes FadeRTL {
   0% {
     opacity: 0;
-    transform: translate(100px, $intro-font-size-L/2);
+    transform: translate(100px, calc(var(--intro-font-size) / 2));
   }
   100% {
     opacity: 1;
-    transform: translate(0, $intro-font-size-L/2);
+    transform: translate(0, calc(var(--intro-font-size) / 2));
   }
 }
 

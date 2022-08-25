@@ -1,6 +1,6 @@
 import "./style.scss"
 
-function Intro({ theme }: any) {
+function Intro() {
   return (
     <div className={`intro-wrapper`}>
       <div className="particle particle-1 " />
