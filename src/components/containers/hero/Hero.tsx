@@ -6,7 +6,6 @@ import SocialList from "../../reusable-components/socialList/SocialList"
 
 const Hero = forwardRef((props, ref: any) => {
   const myCVLink = "https://drive.google.com/file/d/17ccVNvFYUNL703TlaJkY4prYTk_b_0pm/view?usp=share_link"
-
   return (
     <div className="hero-container" ref={ref} id="section1">
       <div className="hero">
